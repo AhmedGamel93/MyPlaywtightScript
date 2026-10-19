@@ -1,0 +1,7 @@
+username,password,expected,run
+standard_user,secret_sauce,success,true
+locked_out_user,secret_sauce,locked_out,false
+problem_user,secret_sauce,problem,true
+performance_glitch_user,secret_sauce,glitch,true
+visual_user,secret_sauce,visual,true
+
