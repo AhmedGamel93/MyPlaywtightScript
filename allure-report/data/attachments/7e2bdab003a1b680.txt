@@ -1,0 +1,2 @@
+Displayed subtotal: 12994, Calculated subtotal: 12994
+Displayed total: 14034, Calculated total: 14034
