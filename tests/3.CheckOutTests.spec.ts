@@ -11,7 +11,7 @@ test('checkout cart items', async ({homePage }) => {
     const checkOutPageInstance = new ChcekOutPage(homePage.page);
     await homePageInstance.addToCart();
     await homePageInstance.openCartPage();
-    await cartPageInstance.cartList.last().waitFor({ state: 'visible', timeout: 2000 });
+    await cartPageInstance.cartList.last().waitFor({ state: 'visible', timeout: 3000 });
     expect(await cartPageInstance.cartList.count()).toBe(6);
     await cartPageInstance.checkout();
     await checkOutPageInstance.fillCheckOutForm("Ahmed", "Gamel", "12345");

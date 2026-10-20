@@ -14,7 +14,7 @@ export default defineConfig({
       slowMo: 0,
       
     },
-       headless :false,
+       headless :true,
        trace: 'retain-on-failure',
      // viewport: { width: 500, height: 500 },
       screenshot:'on',

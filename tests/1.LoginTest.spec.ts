@@ -4,8 +4,8 @@ import { LoginData } from '../utils/ExcelReader';
 import { readData } from '../utils/dataReader';
 
 //const testData: LoginData [] = readData('./test_data/LoginData.xlsx' , "Sheet1");
-const testData : LoginData [] = readData('./test_data/LoginData.csv');
-//const testData : LoginData [] = readData('./test_data/LoginData.json');
+//const testData : LoginData [] = readData('./test_data/LoginData.csv');
+const testData : LoginData [] = readData('./test_data/LoginData.json');
 
 
 test.describe("Login Tests" , ()=>
