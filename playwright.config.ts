@@ -2,6 +2,14 @@ import { defineConfig, devices } from '@playwright/test';
 
 
 export default defineConfig({
+
+  webServer: {
+  command: 'npm run start',
+  url: 'http://localhost:3000',
+  reuseExistingServer: !process.env.CI,
+},
+
+
   testDir: './tests',
   fullyParallel: true,
   reporter: [["line"], ["allure-playwright"]],
