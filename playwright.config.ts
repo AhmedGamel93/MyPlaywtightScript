@@ -15,7 +15,7 @@ export default defineConfig({
       timeout : 50000,
       
     },
-       headless :false,
+       headless :true,
        trace: 'retain-on-failure',
      // viewport: { width: 500, height: 500 },
       screenshot:'on',
