@@ -6,15 +6,16 @@ export default defineConfig({
   fullyParallel: true,
   reporter: [["line"], ["allure-playwright"]],
   forbidOnly: !!process.env.CI,
-    retries: process.env.CI ? 1 : undefined,
+ // retries: process.env.CI ? 0 : 0,
   workers: process.env.CI ? 1 : undefined,
   //reporter: 'html',
   use: {  
         launchOptions: {
-      slowMo: 0,
+     // slowMo: 5000,
+      timeout : 50000,
       
     },
-       headless :true,
+       headless :false,
        trace: 'retain-on-failure',
      // viewport: { width: 500, height: 500 },
       screenshot:'on',
