@@ -2,9 +2,9 @@ name: Playwright Tests
 
 on:
   push:
-    branches: [main, master]
+    branches:  [main, master , New_Tests_AG]
   pull_request:
-    branches: [main, master]
+    branches: [main, master , New_Tests_AG]
   workflow_dispatch:   # lets you run it manually from the Actions tab
 
 jobs:
