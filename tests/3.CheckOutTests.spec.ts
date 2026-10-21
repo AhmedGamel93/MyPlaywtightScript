@@ -14,7 +14,7 @@ test('checkout cart items', async ({homePage }) => {
     await cartPageInstance.cartList.last().waitFor({ state: 'visible', timeout: 3000 });
     expect(await cartPageInstance.cartList.count()).toBe(6);
     await cartPageInstance.checkout();
-    await checkOutPageInstance.fillCheckOutForm("Ahmed", "Gamel", "12345");
+    await checkOutPageInstance.fillCheckOutForm("Ahmed", "Gamel", "12345" );
     
    
 });
